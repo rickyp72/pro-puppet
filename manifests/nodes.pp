@@ -1,4 +1,6 @@
+import 'base.pp'
 node 'rhel6.propuppet.local' {
+ 
   include base
   include apache
   apache::vhost {'www.example.com':
@@ -10,11 +12,11 @@ node 'rhel6.propuppet.local' {
   }
 }
 
-class base {
-  #include ssh
-  #include postfix
-  #include mysql
-  package {'git':
-    ensure => present,
-  }
-}
+#class base {
+#  #include ssh
+#  #include postfix
+#  #include mysql
+#  package {'git':
+#    ensure => present,
+#  }
+#}

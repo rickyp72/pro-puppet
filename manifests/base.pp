@@ -1,3 +1,3 @@
 class base {
-  include ssh
+ # include ssh
 }
